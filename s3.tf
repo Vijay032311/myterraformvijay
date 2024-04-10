@@ -1,11 +1,9 @@
 resource "aws_s3_bucket" "vanbuc" {
-  bucket = "testbuc"
-
-  tags = {
-    Name        = "vanbuc"
-    Environment = "Dev"
-  }
+  bucket = "vanbuc"
 }
 resource "aws_s3_object" "vanobj" {
-  bucket = "testbuc"
+  bucket = "vanbuc"
+  key    = "vanobj"
+
 }
+
